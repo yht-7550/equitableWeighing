@@ -1,0 +1,52 @@
+{
+  "pages": [
+    {
+      "path": "pages/index/index",
+      "style": {
+        "navigationStyle": "custom"
+      }
+    },
+    {
+      "path": "pages/login/login",
+      "style": {
+        /* #ifdef H5 */
+        "navigationBarTitleText": "登录",
+        /* #endif */
+        /* #ifdef APP */
+        "navigationStyle": "custom"
+        /* #endif */
+      }
+    }
+  ],
+  "globalStyle": {
+    "navigationBarTextStyle": "white",
+    "navigationBarTitleText": "uni-app",
+    "navigationBarBackgroundColor": "#165dff",
+    "backgroundColor": "#F1F4FA",
+    "app-plus": {
+      /* #ifdef H5 */
+      "navigationStyle": "custom",
+      /* #endif */
+      "animationType": "slide-in-right"
+    },
+    "rpxCalcMaxDeviceWidth": 960,
+    "rpxCalcBaseDeviceWidth": 375,
+    "rpxCalcIncludeWidth": 750
+  },
+  "condition": {
+    "current": 1,
+    "list": [
+      {
+        "name": "index",
+        "path": "pages/index/index",
+        "query": ""
+      }
+    ]
+  },
+  "easycom": {
+    "autoscan": true,
+    "custom": {
+      "fui-(.*)": "firstui-uni/firstui/fui-$1/fui-$1.vue"
+    }
+  }
+}
