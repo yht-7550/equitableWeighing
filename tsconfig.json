@@ -21,7 +21,8 @@
     "esModuleInterop": true,
     "types": [
       "@dcloudio/types",
-      "node"
+      "node",
+      "uview-plus/types"
     ],
     "skipLibCheck": true,
     "skipDefaultLibCheck": true,

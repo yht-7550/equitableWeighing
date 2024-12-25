@@ -29,6 +29,7 @@
       /* #endif */
       "animationType": "slide-in-right"
     },
+    "pageOrientation": "landscape",
     "rpxCalcMaxDeviceWidth": 960,
     "rpxCalcBaseDeviceWidth": 375,
     "rpxCalcIncludeWidth": 750
@@ -44,9 +45,11 @@
     ]
   },
   "easycom": {
-    "autoscan": true,
-    "custom": {
-      "fui-(.*)": "firstui-uni/firstui/fui-$1/fui-$1.vue"
-    }
-  }
+		"autoscan": true,
+		"custom": {
+			"^u--(.*)": "uview-plus/components/u-$1/u-$1.vue",
+			"^up-(.*)": "uview-plus/components/u-$1/u-$1.vue",
+	    "^u-([^-].*)": "uview-plus/components/u-$1/u-$1.vue"
+		}
+	}
 }

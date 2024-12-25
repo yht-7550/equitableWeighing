@@ -8,5 +8,7 @@ export {}
 declare module 'vue' {
   export interface GlobalComponents {
     Header: typeof import('./src/components/Header.vue')['default']
+    ScrollContainer: typeof import('./src/components/ScrollContainer.vue')['default']
+    SideBar: typeof import('./src/components/SideBar.vue')['default']
   }
 }

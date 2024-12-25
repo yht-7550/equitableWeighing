@@ -1,4 +1,4 @@
-import dayjs from 'dayjs'
+import dayjs from 'dayjs/esm'
 
 /**
  * 获取当前日期、时间、星期

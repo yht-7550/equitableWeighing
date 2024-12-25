@@ -19,6 +19,7 @@
             "autoclose" : true,
             "delay" : 0
         },
+        "screenOrientation" : [ "landscape-primary" ],
         /* 模块配置 */
         "modules" : {
             "Camera" : {},
@@ -97,7 +98,36 @@
                 }
             }
         },
-        "nativePlugins" : {},
+        "nativePlugins" : {
+            "anxuan_hdprint" : {
+                "__plugin_info__" : {
+                    "name" : "anxuanhdprint",
+                    "description" : "恒鼎收银机打印",
+                    "platforms" : "Android",
+                    "url" : "",
+                    "android_package_name" : "",
+                    "ios_bundle_id" : "",
+                    "isCloud" : false,
+                    "bought" : -1,
+                    "pid" : "",
+                    "parameters" : {}
+                }
+            },
+            "anxuan_yimin" : {
+                "__plugin_info__" : {
+                    "name" : "anxuan_yimin",
+                    "description" : "一敏模块",
+                    "platforms" : "Android",
+                    "url" : "",
+                    "android_package_name" : "",
+                    "ios_bundle_id" : "",
+                    "isCloud" : false,
+                    "bought" : -1,
+                    "pid" : "",
+                    "parameters" : {}
+                }
+            }
+        },
         "popGesture" : "none"
     },
     /* 快应用特有相关 */
@@ -112,7 +142,8 @@
         "optimization" : {
             "subPackages" : true
         },
-        "usingComponents" : true
+        "usingComponents" : true,
+        "mergeVirtualHostAttributes" : true
     },
     "mp-alipay" : {
         "usingComponents" : true
@@ -121,7 +152,8 @@
         "usingComponents" : true
     },
     "mp-toutiao" : {
-        "usingComponents" : true
+        "usingComponents" : true,
+        "mergeVirtualHostAttributes" : true
     },
     "uniStatistics" : {
         "enable" : false

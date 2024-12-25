@@ -4,11 +4,8 @@ import path from 'node:path'
 import process from 'node:process'
 import * as uni from '@dcloudio/vite-plugin-uni'
 import commonjs from '@rollup/plugin-commonjs'
-import { VantResolver } from '@vant/auto-import-resolver'
-import autoprefixer from 'autoprefixer'
-import tailwindcss from 'tailwindcss'
+import UnoCSS from 'unocss/vite'
 import AutoImport from 'unplugin-auto-import/vite'
-import Components from 'unplugin-vue-components/vite'
 import { loadEnv } from 'vite'
 import Inspect from 'vite-plugin-inspect'
 import { version } from './package.json'
@@ -41,15 +38,12 @@ function viteConfig({ mode }: ConfigEnv): UserConfig {
       Inspect({
         outputDir: '.vite-inspect',
       }),
+      UnoCSS(),
       // https://github.com/antfu/unplugin-auto-import
       AutoImport({
         imports: ['vue', 'uni-app', 'pinia'],
         // dts: true,
         // vueTemplate: true,
-        resolvers: [VantResolver()],
-      }),
-      Components({
-        resolvers: [VantResolver()],
       }),
     ],
     css: {
@@ -60,10 +54,7 @@ function viteConfig({ mode }: ConfigEnv): UserConfig {
         },
       },
       postcss: {
-        plugins: [
-          tailwindcss,
-          autoprefixer,
-        ],
+        plugins: [],
       },
     },
     build: {

@@ -2,7 +2,7 @@
 
 ### 介绍 📖
 
-该项目主要是用于日常的构建标准项目模板
+该项目主要用于双屏秤的称重打印
 
 ### 安装使用步骤 📔
 
@@ -10,7 +10,7 @@
 
 ```text
 # GitHub
-git clone https://github.com/yht-7550/harmony-demo.git
+git clone https://github.com/yht-7550/equitableWeighing.git
 ```
 
 - **Install：**
@@ -32,13 +32,18 @@ pnpm dev
 pnpm commit
 ```
 
+### Unocss字体图标库 🎨
+* 字体图标库 **[@iconify-json/material-symbols](https://icon-sets.iconify.design/material-symbols)**
+```
+<div class="i-material-symbols:settings w-24px h-24px"></div>
+```
 ### 代码提交类型规范 🔨
 
-#### commitlint.config.js 文件
+#### commitlint.config.cjs 文件
 
 ```
 { value: "feat", name: "特性:   🚀  新增功能", emoji: "🚀" },
-{ value: "fix", name: "修复:   🧩  修复缺陷", emoji: "🧩" },
+{ value: "fix", name: "修复:   🐞  修复缺陷", emoji: "🐞" },
 { value: "docs", name: "文档:   📚  文档变更", emoji: "📚" },
 { value: "style", name: "格式:   🎨  代码格式（不影响功能，例如空格、分号等格式修正）", emoji: "🎨" },
 { value: "refactor", name: "重构:   ♻️  代码重构（不包括 bug 修复、功能新增）", emoji: "♻️" },

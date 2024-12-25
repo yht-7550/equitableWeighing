@@ -1,8 +1,4 @@
 {
-  "files.associations": {
-    "*.css": "tailwindcss"
-  },
-  "tailwindCSS.experimental.configFile": "tailwind.config.ts",
   // Disable the default formatter, use eslint instead
   "prettier.enable": false,
   "editor.formatOnSave": false,
@@ -14,13 +10,18 @@
   // Auto fix
   "editor.codeActionsOnSave": {
     "source.fixAll.eslint": "explicit",
-    // "source.fixAll.stylelint": "explicit",
     "source.fixAll.stylelint": "explicit",
     "source.organizeImports": "never",
   },
 
-  "stylelint.validate": ["css", "scss", "less", "postcss", "vue"],
-  "stylelint.configFile": "stylelint.config.mjs",
+  "stylelint.enable": true,
+  "stylelint.validate": ["css", "less", "postcss", "scss", "vue", "sass", "html"],
+  "[scss]": {
+    "editor.defaultFormatter": "stylelint.vscode-stylelint"
+  },
+  "css.validate": false,
+  "less.validate": false,
+  "scss.validate": false,
 
   // Silent the stylistic rules in you IDE, but still auto fix them
   "eslint.rules.customizations": [
@@ -60,8 +61,4 @@
     "pcss",
     "postcss"
   ],
-
-  "[scss]": {
-    "editor.defaultFormatter": "stylelint.vscode-stylelint"
-  }
 }
