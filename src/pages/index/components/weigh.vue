@@ -118,14 +118,20 @@ const print = () => {
                 :label-style="{ fontSize: '28rpx' }"
               >
                 <up-form-item label="重量" required>
-                  <up-input v-model="weigh" disabled placeholder="称重重量" input-align="right">
+                  <up-input
+                    v-model="weigh"
+                    disabled
+                    placeholder="称重重量"
+                    input-align="right"
+                    :adjust-position="false"
+                  >
                     <template #suffix>
                       {{ weighStore.weighData.unit }}
                     </template>
                   </up-input>
                 </up-form-item>
                 <up-form-item label="名称" prop="name" required>
-                  <up-input v-model="weighData.name" placeholder="请输入名称"></up-input>
+                  <up-input v-model="weighData.name" placeholder="请输入名称" :adjust-position="false"></up-input>
                 </up-form-item>
                 <!-- <up-form-item label="备注" prop="note">
                   <up-textarea v-model="weighData.note" placeholder="请输入备注"></up-textarea>

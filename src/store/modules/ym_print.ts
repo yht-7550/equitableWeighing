@@ -86,8 +86,8 @@ export const useYMPrintStore = defineStore('YMPrint', {
             printType: 'PAPERFEED',
             msg: '走纸',
           },
-        ]), (res, err) => {
-          console.log('打印结果 => ', res, err)
+        ]), (res) => {
+          console.log('打印结果 => ', res)
         })
       }
     },

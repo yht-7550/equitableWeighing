@@ -26,7 +26,7 @@ const modelValueProxy = computed({
     <div
       v-for="(item, index) in tabs"
       :key="index"
-      class="h-120rpx flex-center flex-col cursor-pointer text-sm"
+      class="h-136rpx flex-center flex-col cursor-pointer text-sm"
       :class="[modelValueProxy === index ? 'bg-white text-[#008FFF] font-bold' : 'text-white']"
       @tap="modelValueProxy = index"
     >

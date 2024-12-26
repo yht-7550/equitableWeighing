@@ -2,12 +2,14 @@ import type { IPrintBrandData } from '../interface'
 import { getStorage, setStorage } from '@/utils'
 import { useHDPrintStore } from './hd_print'
 import { useYMPrintStore } from './ym_print'
+
 // define store
 const deviceBrandName = computed(() => getStorage('printBrand') ? getStorage('printBrand').name : '')
+
 export const useAppStore = defineStore('app', {
   state: () => ({
     name: '称重',
-    version: '1.0.0',
+    version: '1.0.1',
     deviceUUID: '',
     deviceModelName: '',
     deviceBrandName: deviceBrandName.value,
