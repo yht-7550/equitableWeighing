@@ -6,7 +6,7 @@
 
 ### Visual Studio Code 配置 🎡
 
-- **本项目基于 `Antfu大佬` 的 `@antfu/eslint-config` 实现代码格式化，需安装对应插件 ：** 
+- **本项目基于 `Antfu大佬` 的 [`@antfu/eslint-config`](https://github.com/antfu/eslint-config) 实现代码格式化，需安装对应插件 ：** 
 
   ![alt text](img_eslint.png)
 - **本项目基于 `Stylelint` 实现样式格式化，需安装对应插件 ：** 
