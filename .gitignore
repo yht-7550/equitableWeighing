@@ -5,6 +5,7 @@
 *dist
 *release
 /out-tsc
+unpackage/resources
 
 # uniapp plugins
 nativeplugins

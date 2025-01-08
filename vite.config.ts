@@ -58,7 +58,7 @@ function viteConfig({ mode }: ConfigEnv): UserConfig {
       },
     },
     build: {
-      sourcemap: true,
+      sourcemap: false,
       rollupOptions: {
         plugins: [
           commonjs({

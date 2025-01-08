@@ -13,6 +13,7 @@ export default antfu({
       'antfu/top-level-function': 'off',
       'no-console': 'warn',
       'vue/quote-props': ['error', 'always'],
+      'ts/no-use-before-define': 'off',
     },
   },
 
@@ -47,5 +48,5 @@ export default antfu({
   // Disable jsonc and yaml support
   jsonc: false,
   yaml: false,
-  ignores: ['**/node_modules/**', '**/dist/**'],
+  ignores: ['**/node_modules/**', '**/dist/**', 'README.md'],
 })

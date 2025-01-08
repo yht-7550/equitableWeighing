@@ -1,3 +1,5 @@
+export * from './env'
+export * from './error'
 export * from './modal'
 export * from './nav'
 export * from './storage'
@@ -14,4 +16,20 @@ export const deleteUndefined: any = (obj: any) => {
     }
   }
   return obj
+}
+
+/**
+ * 提取URL的参数
+ * @param urlParamsStr URL的参数(包含?开头的)
+ * @returns URL参数对象
+ */
+export const getUrlParams = (urlParamsStr: string) => {
+  return Array.from(new URLSearchParams(urlParamsStr)).reduce(
+    (p, [k, v]) => (
+      Object.assign({}, p, {
+        [k]: p[k] ? (Array.isArray(p[k]) ? p[k] : [p[k]]).concat(v) : v,
+      })
+    ),
+    {},
+  ) as anyObj
 }
