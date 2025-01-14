@@ -30,6 +30,6 @@ onHide(() => {
 </script>
 
 <style lang="scss">
-@import "uview-plus/index";
+@import 'uview-plus/index';
 @import './assets/css/common';
 </style>

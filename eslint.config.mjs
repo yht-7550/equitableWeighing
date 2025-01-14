@@ -1,7 +1,17 @@
 import antfu from '@antfu/eslint-config'
 
 export default antfu({
-  type: 'lib', // app
+  type: 'lib', // 可选项：app
+
+  // Format CSS, Less, Sass, and SCSS
+  formatters: {
+    css: 'prettier',
+    prettierOptions: {
+      tabWidth: 2,
+      useTabs: false,
+    },
+  },
+
   // Enable stylistic formatting rules
   // stylistic: true,
 

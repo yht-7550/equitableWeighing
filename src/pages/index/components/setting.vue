@@ -62,7 +62,7 @@ const handleConnectWeighDevice = async (id: string) => {
 </script>
 
 <template>
-  <div class="w-full h-full">
+  <div class="h-full w-full">
     <ScrollContainer>
       <up-cell title="应用版本" :border="false">
         <template #value>
@@ -75,16 +75,16 @@ const handleConnectWeighDevice = async (id: string) => {
         </template>
         <template #value>
           <span v-if="appStore.deviceBrandName" class="text-[#333]">{{ appStore.deviceBrandName }}</span>
-          <span v-else class="text-[blue] text-sm">请选择秤品牌</span>
+          <span v-else class="text-sm text-[blue]">请选择秤品牌</span>
         </template>
       </up-cell>
       <up-popup :show="brandShow" :round="10" mode="bottom" @close="brandShow = false">
         <div class="p-32rpx">
-          <div class="text-center mb-32rpx font-bold">
+          <div class="mb-32rpx text-center font-bold">
             秤品牌
           </div>
           <div class="list">
-            <div v-for="(item, index) in printBrandList" :key="index" class="flex-center py-16rpx list_item" @click="handleSelectBrand(item)">
+            <div v-for="(item, index) in printBrandList" :key="index" class="list_item flex-center py-16rpx" @click="handleSelectBrand(item)">
               {{ item.name }}
             </div>
           </div>
@@ -94,7 +94,7 @@ const handleConnectWeighDevice = async (id: string) => {
         <up-collapse :value="activeName">
           <up-collapse-item title="打印设备" name="print">
             <div v-if="printDeviceList.length">
-              <div v-for="(item, index) in printDeviceList" :key="index" class="flex items-center my-2">
+              <div v-for="(item, index) in printDeviceList" :key="index" class="my-2 flex items-center">
                 <div class="flex-1">
                   <div>制造商名称：{{ item.manufacturerName }}</div>
                   <div>产品名称：{{ item.productName }}</div>
@@ -110,13 +110,13 @@ const handleConnectWeighDevice = async (id: string) => {
                 </div>
               </div>
             </div>
-            <div v-else class="flex-center h-full">
-              <image src="@/static/images/index/empty.svg" class="w-400rpx h-400rpx" />
+            <div v-else class="h-full flex-center">
+              <image src="@/static/images/index/empty.svg" class="h-400rpx w-400rpx" />
             </div>
           </up-collapse-item>
           <up-collapse-item title="称重设备" name="weigh">
             <div v-if="weighDeviceList.length">
-              <div v-for="(item, index) in weighDeviceList" :key="index" class="flex items-center my-2">
+              <div v-for="(item, index) in weighDeviceList" :key="index" class="my-2 flex items-center">
                 <div class="flex-1">
                   {{ item }}
                 </div>
@@ -131,8 +131,8 @@ const handleConnectWeighDevice = async (id: string) => {
                 </div>
               </div>
             </div>
-            <div v-else class="flex-center h-full">
-              <image src="@/static/images/index/empty.svg" class="w-400rpx h-400rpx" />
+            <div v-else class="h-full flex-center">
+              <image src="@/static/images/index/empty.svg" class="h-400rpx w-400rpx" />
             </div>
           </up-collapse-item>
         </up-collapse>
@@ -143,9 +143,9 @@ const handleConnectWeighDevice = async (id: string) => {
 
 <style lang="scss" scoped>
 .list {
-  border-bottom: 1rpx solid #EAEBEC;
+  border-bottom: 1rpx solid #eaebec;
 }
 .list_item {
-  border-top: 1rpx solid #EAEBEC;
+  border-top: 1rpx solid #eaebec;
 }
 </style>

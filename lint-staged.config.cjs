@@ -1,7 +1,7 @@
 module.exports = {
   '*.{js,jsx,ts,tsx}': ['eslint --fix'],
-  '*.vue': ['eslint --fix', 'stylelint --fix'],
-  '*.{scss,less,styl,html}': ['stylelint --fix'],
+  '*.vue': ['eslint --fix'],
+  '*.{scss,less,css}': ['eslint --fix'],
 }
 
 // module.exports = {
