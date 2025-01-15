@@ -111,7 +111,7 @@ const handleConnectWeighDevice = async (id: string) => {
               </div>
             </div>
             <div v-else class="h-full flex-center">
-              <image src="@/static/images/index/empty.svg" class="h-400rpx w-400rpx" />
+              <image src="@/assets/images/index/empty.svg" class="h-400rpx w-400rpx" />
             </div>
           </up-collapse-item>
           <up-collapse-item title="称重设备" name="weigh">
@@ -132,7 +132,7 @@ const handleConnectWeighDevice = async (id: string) => {
               </div>
             </div>
             <div v-else class="h-full flex-center">
-              <image src="@/static/images/index/empty.svg" class="h-400rpx w-400rpx" />
+              <image src="@/assets/images/index/empty.svg" class="h-400rpx w-400rpx" />
             </div>
           </up-collapse-item>
         </up-collapse>

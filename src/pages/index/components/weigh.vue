@@ -106,7 +106,7 @@ const print = () => {
           <Card v-if="weighStore.ifWeighConnected" show-shadow class="w-full h-full">
             <div class="flex-center flex-col p-32rpx">
               <div class="mx-auto bg-white rounded-full">
-                <image src="@/static/logo.png" class="w-100rpx h-100rpx" />
+                <image src="@/assets/images/logo.png" class="w-100rpx h-100rpx" />
               </div>
               <up-form
                 ref="uForm"
@@ -149,7 +149,7 @@ const print = () => {
           </Card>
           <div v-else>
             <div class="text-center mb-50rpx">
-              <image src="@/static/images/index/no_weigh.svg" class="w-256rpx h-256rpx" />
+              <image src="@/assets/images/index/no_weigh.svg" class="w-256rpx h-256rpx" />
               <div class="text-[#CDCDCD] text-lg mt-8rpx">
                 称重设备未连接
               </div>

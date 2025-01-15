@@ -9,7 +9,7 @@ const deviceBrandName = computed(() => getStorage('printBrand') ? getStorage('pr
 export const useAppStore = defineStore('app', {
   state: () => ({
     name: '称重',
-    version: '1.0.1',
+    version: '1.0.2',
     deviceUUID: '',
     deviceModelName: '',
     deviceBrandName: deviceBrandName.value,

@@ -8,7 +8,7 @@ const { nowDate, nowTime } = useNowDate()
   <div class="h-112rpx bg-[#008FFF] flex justify-between items-center px-32rpx text-white">
     <div class="flex items-center">
       <div class="bg-white w-80rpx h-80rpx rounded-full mr-16rpx flex-center">
-        <image src="@/static/logo.png" class="w-56rpx h-56rpx" alt="" />
+        <image src="@/assets/images/logo.png" class="w-56rpx h-56rpx" alt="" />
       </div>
       <div class="text-2xl font-youshe">
         安溯称重
@@ -25,7 +25,4 @@ const { nowDate, nowTime } = useNowDate()
   </div>
 </template>
 
-<style lang="scss" scoped>
-.headerContainer {
-}
-</style>
+<style lang="scss" scoped></style>
